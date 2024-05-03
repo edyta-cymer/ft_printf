@@ -17,9 +17,7 @@ int	s_specifier(va_list args, char format)
 
 	len = 0;
 	if (format == 's')
-	{
 		len += ft_putstr(va_arg(args, char *));
-	}
 	if (format == 'd' || format == 'i')
 		len += id_specifier(va_arg(args, int));
 	if (format == 'x')
